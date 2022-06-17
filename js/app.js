@@ -1,4 +1,4 @@
-class Slider {
+ class Slider {
     constructor(options) {
         this.slider = document.querySelector(options.el)
         this.sliderBox = this.slider.querySelector(".slider__box")
@@ -106,4 +106,13 @@ const carousel3 = new Slider({
     direction: "Y",
     autoplay: true,
     interval: "3000"
-})
+}) 
+
+
+
+
+// menu burger
+
+
+
+
