@@ -1,5 +1,4 @@
 @import url(fonts.css);
-
 :root {
     --main-font: "Open Sans"
 }
@@ -31,8 +30,6 @@ li {
     margin: 0 auto;
 }
 
-
-
 .btn {
     background: #297D3B;
     border-radius: 40px;
@@ -40,6 +37,7 @@ li {
     width: 100%;
     text-align: center;
 }
+
 
 /* Nav start */
 
@@ -49,23 +47,18 @@ li {
     left: 0;
     width: 100%;
     z-index: 5;
-
     margin-bottom: 100px;
-
-
 }
 
 .nav__content {
     width: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 .nav__top {
     display: flex;
     justify-content: space-between;
-
     padding: 20px 0;
 }
 
@@ -134,7 +127,9 @@ li {
     transform: translateY(-10px);
 }
 
+
 /* nav endes */
+
 
 /* Header start */
 
@@ -144,13 +139,11 @@ header {
 }
 
 .header__nav {
-
     width: 100%;
     backdrop-filter: blur(12px);
     padding-top: 10px;
     padding: 20px 20px;
     background: rgba(255, 255, 255, 0.534);
-
 }
 
 .header__nav-content {
@@ -161,7 +154,7 @@ header {
 
 .nav__response-list {
     display: flex;
-    opacity: 0;
+    transform: translateX(100%);
     flex-direction: column;
     width: 100%;
     min-height: 200vh;
@@ -173,7 +166,7 @@ header {
     padding-top: 200px;
 }
 
-.nav__menu{
+.nav__menu {
     width: 30px;
     height: 20px;
     display: flex;
@@ -181,10 +174,9 @@ header {
     justify-content: start;
     align-items: center;
     opacity: 0;
-    
-    
 }
-.nav__menu-line::after{
+
+.nav__menu-line::after {
     content: '';
     width: 100%;
     position: absolute;
@@ -193,17 +185,19 @@ header {
     bottom: 0;
     right: 0;
     border-radius: 7px;
-    
 }
-.nav__login{
+
+.nav__login {
     color: #242222;
 }
-.nav__brand-right{
+
+.nav__brand-right {
     display: flex;
     column-gap: 30px;
     align-items: center;
 }
-.nav__menu-line::before{
+
+.nav__menu-line::before {
     content: '';
     height: 3px;
     border-radius: 7px;
@@ -213,18 +207,28 @@ header {
     left: 0;
     background: #000;
 }
-.nav__menu-line{
+
+.nav__menu-line {
     width: 50%;
     border-radius: 7px;
     height: 3px;
     background: #000;
-    
 }
-.header__nav-brand{
+
+.nav__menu.active .nav__menu-line::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav__menu-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header__nav-brand {
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
 }
 
 .nav__response-list.active {
@@ -264,7 +268,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-right: 20px;
-
 }
 
 .header__nav-list {
@@ -314,7 +317,6 @@ header {
     line-height: 19px;
     letter-spacing: 0.01em;
     color: #242222;
-
 }
 
 .header__list-link .header__link-icon:hover {
@@ -341,7 +343,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
 }
 
 .header__left-title {
@@ -366,38 +367,29 @@ header {
     max-width: 452px;
     width: 100%;
     margin-bottom: 55px;
-
 }
 
 .header__left-btn {
     color: #FFFFFF;
     border-radius: 5px;
-   
-    max-width: 200px;
+    max-width: 230px;
     width: 100%;
     position: relative;
     padding: 20px 29px;
     display: inline-block;
-
-
 }
-
 
 .header__left-btn:nth-of-type(1) {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 99%);
-
 }
 
 .header__left-btn:nth-of-type(2) {
     clip-path: polygon(10% 2%, 100% 0, 100% 100%, 0 99%);
 }
 
-
 .header__left-title span {
     color: #297D3B;
 }
-
-
 
 .header__right-img {
     z-index: 1;
@@ -405,7 +397,6 @@ header {
     max-width: 610px;
     width: 100%;
     object-fit: cover;
-
 }
 
 .header__right::after {
@@ -423,15 +414,19 @@ header {
     position: relative;
 }
 
+
 /* header end */
 
 
 /* main start */
+
 main {
     margin-top: 200px;
 }
 
+
 /* projects start  */
+
 .projects {
     position: relative;
 }
@@ -440,7 +435,6 @@ main {
     display: flex;
     padding: 0 20px;
     flex-direction: column;
-
 }
 
 .projects__introduce {
@@ -490,15 +484,14 @@ main {
     color: #ffffff;
 }
 
+
 /* projects grid */
 
 .projects__blocksystem {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 20px;
-
 }
 
 .projects__block {
@@ -509,7 +502,6 @@ main {
     background: #FAFAFA;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-
 }
 
 .projects__block-img {
@@ -548,7 +540,6 @@ main {
     padding: 16px 45px;
     color: #ffffff;
     display: inline-block;
-
 }
 
 .margin__bottom {
@@ -599,22 +590,18 @@ main {
 
 /* slider start */
 
-
 .slider__content {
     min-height: 500px;
     max-height: 500px;
     width: 100%;
     overflow: hidden;
     position: relative;
-
     justify-content: space-between;
     margin-bottom: 65px;
     padding: 0 20px;
-
 }
 
 .slider__item {
-
     background: #F7F7F7;
     border-radius: 10px;
     color: #fff;
@@ -622,7 +609,8 @@ main {
     align-items: center;
     position: relative;
     justify-content: center;
-
+    max-width: 1360px;
+    width: 100%;
 }
 
 .slider__controls {
@@ -638,23 +626,11 @@ main {
     padding: 112px 159px 80px 37px;
 }
 
-.slider__prev,
-.slider__next {
-    padding: 10px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 50px;
-}
-
 .slider__item img {
     max-width: 578px;
     width: 100%;
     height: 500px;
     object-fit: cover;
-
-
 }
 
 .slider__title {
@@ -701,6 +677,11 @@ main {
     padding: 18px 60px;
 }
 
+.slider__img {
+    max-width: 578px;
+    width: 100%;
+}
+
 .slider__item::after {
     content: url(../img/elipsRed.png);
     object-fit: cover;
@@ -709,7 +690,6 @@ main {
     position: absolute;
     margin-top: 11px;
     z-index: 1;
-
 }
 
 .slider__item::before {
@@ -730,10 +710,7 @@ main {
 }
 
 
-
-
 /* slider end */
-
 
 
 /* consultation start */
@@ -761,7 +738,6 @@ main {
 
 .consultation__title:nth-of-type(2) {
     font-weight: 600;
-
 }
 
 .consultation__btns {
@@ -772,7 +748,6 @@ main {
     column-gap: 25px;
     flex-wrap: wrap;
     gap: 20px;
-
 }
 
 .consultation__btn {
@@ -800,19 +775,15 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px 20px;
-
-
 }
 
 .consultation__block {
     width: 100%;
     display: flex;
     flex-direction: column;
-
     background: #FAFAFA;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-
 }
 
 .consultation__block-title {
@@ -856,8 +827,6 @@ main {
     display: flex;
     justify-self: start;
     column-gap: 9px;
-
-
 }
 
 .consultation__readmore {
@@ -877,8 +846,8 @@ main {
 }
 
 
-
 /* footer start */
+
 footer {
     position: relative;
     margin-bottom: 27px;
@@ -969,37 +938,6 @@ footer {
     letter-spacing: 0.03em;
     color: #242222;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* h1 {
