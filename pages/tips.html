@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INBUSINESS</title>
     <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/tips.css">
     <link rel="shortcut icon" href="../img/cats.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/media.cssgit">
@@ -14,70 +15,127 @@
 
 <body>
     <nav class="nav">
-        <div class="container">
-            <div class="nav__content">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#!" class="nav__link">Ищу инвестора</a></li>
-                    <li class="nav__item"><a href="../pages/project.html" class="nav__link">Ищу хороший проект</a></li>
-                    <li class="nav__item"><a href="../pages/franchise.html" class="nav__link">Франшиза</a></li>
-                    <li class="nav__item"><a href="../pages/business.html" class="nav__link">Готовый бизнес</a></li>
-                    <li class="nav__item"><a href="#!" class="nav__link">Бизнес тусы</a></li>
-                    <li class="nav__item"><a href="../pages/consultation.html" class="nav__link">Консультации</a></li>
-                </ul>
 
-                <div class="nav__right">
-                    <div class="nav__language">
-                        <select name="" id="" class="language">
-                            <option value="uz" selected>Уз</option>
-                            <option value="en">Енг</option>
-                            <option value="ru">Руc</option>
-                        </select>
+        <div class="nav__content">
+            <div class="nav__top-shadow">
+                <div class="container nav__top">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#!" class="nav__link">Ищу инвестора</a></li>
+                        <li class="nav__item"><a href="pages/project.html" class="nav__link">Ищу хороший проект</a></li>
+                        <li class="nav__item"><a href="pages/franchise.html" class="nav__link">Франшиза</a></li>
+                        <li class="nav__item"><a href="pages/business.html" class="nav__link">Готовый бизнес</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Бизнес тусы</a></li>
+                        <li class="nav__item"><a href="pages/consultation.html" class="nav__link">Консультации</a></li>
+                    </ul>
 
-                    </div>
-                    <div class="nav__icons icons">
-                        <a href="" class="nav__icon icon"><img src="../img/Vector (2).png" alt=""></a>
-                        <a href="" class="nav__icon icon"><img src="../img/Vector (1).png" alt=""></a>
-                        <a href="" class="nav__icon icon"><img src="../img/Vector (3).png" alt=""></a>
+                    <div class="nav__right">
+                        <div class="nav__language">
+                            <select name="" id="" class="language">
+                                <option value="uz" selected>Уз</option>
+                                <option value="en">Енг</option>
+                                <option value="ru">Руc</option>
+                            </select>
+
+                        </div>
+                        <div class="nav__icons icons">
+                            <a href="" class="nav__icon icon"><img src="img/Vector (2).png" alt=""></a>
+                            <a href="" class="nav__icon icon"><img src="img/Vector (1).png" alt=""></a>
+                            <a href="" class="nav__icon icon"><img src="img/Vector (3).png" alt=""></a>
+                        </div>
                     </div>
                 </div>
+
+                <ul class="nav__response-list">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#!" class="nav__link">Ищу инвестора</a></li>
+                        <li class="nav__item"><a href="pages/project.html" class="nav__link">Ищу хороший проект</a></li>
+                        <li class="nav__item"><a href="pages/franchise.html" class="nav__link">Франшиза</a></li>
+                        <li class="nav__item"><a href="pages/business.html" class="nav__link">Готовый бизнес</a></li>
+                        <li class="nav__item"><a href="#!" class="nav__link">Бизнес тусы</a></li>
+                        <li class="nav__item"><a href="pages/consultation.html" class="nav__link">Консультации</a></li>
+                    </ul>
+
+                    <div class="nav__right">
+                        <div class="nav__language">
+                            <select name="" id="" class="language">
+                                <option value="uz" selected>Уз</option>
+                                <option value="en">Енг</option>
+                                <option value="ru">Руc</option>
+                            </select>
+
+                        </div>
+                        <div class="nav__icons icons">
+                            <a href="" class="nav__icon icon"><img src="img/Vector (2).png" alt=""></a>
+                            <a href="" class="nav__icon icon"><img src="img/Vector (1).png" alt=""></a>
+                            <a href="" class="nav__icon icon"><img src="img/Vector (3).png" alt=""></a>
+                        </div>
+                    </div>
+                    <ul class="responsive__nav-list">
+
+                        <a href="#!" class="header__list-link"><i class="fal fa-sign-out header__link-icon"></i><span
+                                class="header__link-txt">Вход</span></a>
+                        <a href="#!" class="header__list-link"><i class="fal fa-user-alt header__link-icon"></i><span
+                                class="header__link-txt">Регистрация</span></a>
+
+                        <a href="#!" class="header__list-btn btn">Добавить проект</a>
+
+                    </ul>
+                </ul>
+            </div>
+            <div class="nav__bottom header__nav">
+                <div class="container">
+
+                    <div class="header__nav-content">
+                        <div class="header__nav-brand">
+                            <a href="../index.html
+                            " class="header__brand-logo logo"><span>IN</span>BUSINESS</a>
+                            <div class="nav__brand-right">
+                                <a href="#!" class="nav__login"><i class="fal fa-sign-out fa-2x"></i></a>
+                                <div class="nav__menu">
+                                    <div class="nav__menu-line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form action="" class="header__nav-form">
+                            <input type="search" placeholder="Поиск">
+                            <i class="fal fa-search"></i>
+                        </form>
+
+                        <ul class="header__nav-list">
+
+                            <a href="#!" class="header__list-link"><i
+                                    class="fal fa-sign-out header__link-icon"></i><span
+                                    class="header__link-txt">Вход</span></a>
+                            <a href="#!" class="header__list-link"><i
+                                    class="fal fa-user-alt header__link-icon"></i><span
+                                    class="header__link-txt">Регистрация</span></a>
+
+                            <a href="#!" class="header__list-btn btn">Добавить проект</a>
+
+                        </ul>
+                    </div>
+                </div>
+
+
             </div>
         </div>
+
     </nav>
 
-    <div class="header__nav">
-        <div class="container">
-            <div class="header__nav-content">
-                <div class="header__nav-brand">
-                    <a href="../index.html" class="header__brand-logo logo"><span>IN</span>BUSINESS</a>
-                </div>
-
-                <form action="" class="header__nav-form">
-                    <input type="search" placeholder="Поиск">
-                    <i class="fal fa-search"></i>
-                </form>
-
-                <ul class="header__nav-list">
-
-                    <a href="#!" class="header__list-link"><i class="fal fa-sign-out"></i></a>
-                    <a href="#!" class="header__list-link"><i class="fal fa-user-alt"></i></a>
-
-                    <a href="#!" class="header__list-btn btn">Добавить проект</a>
-
-                </ul>
-            </div>
-        </div>
-    </div>
+  
 
     <main>
         <div class="tips__introduce">
             <a href="#!" class="tips__introduce-link"></a>
                 <a href="#!" class="tips__introduce-link"></a>
         </div>
-        <section class="slider">
-            <div class="container">
-                <div class="slider__content" id="carousel">
-                    <div class="slider__box">
-
+        <div class="container">
+            <div class="swiper" id="carousel">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
                         <div class="slider__item">
 
                             <div class="slider__item-left">
@@ -86,52 +144,43 @@
                                 <p class="slider__txt">Финансово <span>выгодное</span> предложение</p>
                                 <a href="#!" class="slider__btn btn">Подробнее</a>
                             </div>
-                            <img src="../img/figure.png" alt="" class="slider__figure">
-                            <img src="../img/slider-img.png" alt="">
+                            <img src="img/figure.png" alt="" class="slider__figure">
+                            <img src="img/slider-img.png" alt="" class="slider__img">
                         </div>
-                        <div class="slider__item">
-
-                            <div class="slider__item-left">
-                                <h3 class="slider__title">ОТКРОЙТЕ <span>УЧЕБНЫЙ ЦЕНТР</span> ВМЕСТЕ С ЛИДЕРАМИ СТРАНЫ
-                                </h3>
-                                <p class="slider__txt">Финансово <span>выгодное</span> предложение</p>
-                                <a href="#!" class="slider__btn btn">Подробнее</a>
-                            </div>
-                            <img src="../img/figure.png" alt="" class="slider__figure">
-                            <img src="../img/slider-img.png" alt="">
-                        </div>
-                        <div class="slider__item">
-
-                            <div class="slider__item-left">
-                                <h3 class="slider__title">ОТКРОЙТЕ <span>УЧЕБНЫЙ ЦЕНТР</span> ВМЕСТЕ С ЛИДЕРАМИ СТРАНЫ
-                                </h3>
-                                <p class="slider__txt">Финансово <span>выгодное</span> предложение</p>
-                                <a href="#!" class="slider__btn btn">Подробнее</a>
-                            </div>
-                            <img src="../img/figure.png" alt="" class="slider__figure">
-                            <img src="../img/slider-img.png" alt="">
-                        </div>
-                        <div class="slider__item">
-
-                            <div class="slider__item-left">
-                                <h3 class="slider__title">ОТКРОЙТЕ <span>УЧЕБНЫЙ ЦЕНТР</span> ВМЕСТЕ С ЛИДЕРАМИ СТРАНЫ
-                                </h3>
-                                <p class="slider__txt">Финансово <span>выгодное</span> предложение</p>
-                                <a href="#!" class="slider__btn btn">Подробнее</a>
-                            </div>
-                            <img src="../img/figure.png" alt="" class="slider__figure">
-                            <img src="../img/slider-img.png" alt="">
-                        </div>
-
                     </div>
-                    <div class="slider__controls">
-                        <button class="slider__prev">
-                            <</button> <button class="slider__next">>
-                        </button>
+                    <div class="swiper-slide">
+                        <div class="slider__item">
+
+                            <div class="slider__item-left">
+                                <h3 class="slider__title">ОТКРОЙТЕ <span>УЧЕБНЫЙ ЦЕНТР</span> ВМЕСТЕ С ЛИДЕРАМИ СТРАНЫ
+                                </h3>
+                                <p class="slider__txt">Финансово <span>выгодное</span> предложение</p>
+                                <a href="#!" class="slider__btn btn">Подробнее</a>
+                            </div>
+                            <img src="img/figure.png" alt="" class="slider__figure">
+                            <img src="img/slider-img.png" alt="" class="slider__img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__item">
+
+                            <div class="slider__item-left">
+                                <h3 class="slider__title">ОТКРОЙТЕ <span>УЧЕБНЫЙ ЦЕНТР</span> ВМЕСТЕ С ЛИДЕРАМИ СТРАНЫ
+                                </h3>
+                                <p class="slider__txt">Финансово <span>выгодное</span> предложение</p>
+                                <a href="#!" class="slider__btn btn">Подробнее</a>
+                            </div>
+                            <img src="img/figure.png" alt="" class="slider__figure">
+                            <img src="img/slider-img.png" alt="" class="slider__img">
+                        </div>
                     </div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination slider__dot"></div>
+
+                <!-- If we need scrollbar -->
             </div>
-        </section>
+        </div>
 
         <section class="projects">
             <div class="container">
@@ -360,6 +409,9 @@
 
     </footer>
 
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/app.js"></script>
 
 </body>
 

@@ -1,9 +1,8 @@
- class Slider {
+ /* class Slider {
      constructor(options) {
          this.slider = document.querySelector(options.el)
          this.sliderBox = this.slider.querySelector(".slider__box")
          this.slides = this.sliderBox.children
-         console.log(this.slides);
          this.next = this.slider.querySelector(".slider__next")
          this.prev = this.slider.querySelector(".slider__prev")
 
@@ -23,7 +22,7 @@
          for (let i = 0; i < this.slides.length; i++) {
              const slide = this.slides[i]
              slide.style = `position: absolute;
-                           max-width: ${this.width}px
+                           max-width: ${this.width}px;
                            width: 100%;
                            height: ${this.height}px;
                           `
@@ -79,14 +78,14 @@
 
          if (btn == this.next) {
              this.activeSlide++
-                 if (this.activeSlide == this.slides.length) {
-                     this.activeSlide = 0
-                 }
+             if (this.activeSlide == this.slides.length) {
+                 this.activeSlide = 0
+             }
          } else if (btn == this.prev) {
              this.activeSlide--
-                 if (this.activeSlide < 0) {
-                     this.activeSlide = this.slides.length - 1
-                 }
+             if (this.activeSlide < 0) {
+                 this.activeSlide = this.slides.length - 1
+             }
          }
 
          this.slides[this.activeSlide].style.transform = `translate${this.direction}(0)`
@@ -97,22 +96,52 @@
  const carousel = new Slider({
      el: "#carousel",
      time: 1000
- })
- const carousel2 = new Slider({
-     el: "#carousel-2",
-     direction: "Y"
- })
- const carousel3 = new Slider({
-     el: "#carousel-3",
-     direction: "Y",
-     autoplay: true,
-     interval: "3000"
- })
+ }) */
 
 
+ const swiper = new Swiper('.swiper', {
+     // Optional parameters
+     loop: true,
+
+     // If we need pagination
+     pagination: {
+         el: '.swiper-pagination',
+     },
+     
+     breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+        }
+      }
+
+     // Navigation arrows
+
+     // And if we need scrollbar
+    //  scrollbar: {
+    //      el: '.swiper-scrollbar',
+    //  },
+ });
 
 
  // menu burger
 
 
- let navMenu = document.querySelector(".nav__menu-line")
+ let navMenu = document.querySelector(".nav__menu")
+ let responseList = document.querySelector(".nav__response-list")
+
+ navMenu.addEventListener('click', function () {
+     this.classList.toggle("active")
+     responseList.classList.toggle("active")
+ })

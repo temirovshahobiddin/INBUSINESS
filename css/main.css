@@ -1,4 +1,5 @@
 @import url(fonts.css);
+
 :root {
     --main-font: "Open Sans"
 }
@@ -164,6 +165,7 @@ header {
     background: rgba(255, 255, 255, 0.342);
     backdrop-filter: blur(12px);
     padding-top: 200px;
+    transition: all .4s;
 }
 
 .nav__menu {
@@ -182,19 +184,10 @@ header {
     position: absolute;
     background: #000;
     height: 3px;
-    bottom: 0;
+    top: 8px;
     right: 0;
     border-radius: 7px;
-}
-
-.nav__login {
-    color: #242222;
-}
-
-.nav__brand-right {
-    display: flex;
-    column-gap: 30px;
-    align-items: center;
+    transition: all .4s;
 }
 
 .nav__menu-line::before {
@@ -203,16 +196,15 @@ header {
     border-radius: 7px;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -8px;
     left: 0;
     background: #000;
+    transition: all .4s;
 }
 
-.nav__menu-line {
-    width: 50%;
-    border-radius: 7px;
-    height: 3px;
-    background: #000;
+.nav__menu.active .nav__menu-line {
+    /* width: 0; */
+    background: transparent;
 }
 
 .nav__menu.active .nav__menu-line::before {
@@ -220,10 +212,36 @@ header {
     top: 0;
 }
 
-.nav__menu-line::after {
+.nav__menu.active .nav__menu-line::after {
     transform: rotate(-45deg);
     top: 0;
 }
+
+.nav__menu-line {
+    width: 100%;
+    border-radius: 7px;
+    height: 3px;
+    position: relative;
+    background: #000;
+    transition: all .1s;
+}
+
+.nav__login {
+    color: #242222;
+    opacity: 0;
+}
+
+.nav__brand-right {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+
+
+
+
+
 
 .header__nav-brand {
     display: flex;
@@ -232,7 +250,9 @@ header {
 }
 
 .nav__response-list.active {
-    position: relative;
+
+    transform: translateX(0%);
+    z-index: 6;
 }
 
 .header__list-item {
@@ -589,6 +609,26 @@ main {
 
 
 /* slider start */
+.slider__dot {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.swiper-pagination-bullet {
+    background: #a9a9a9;
+    width: 10px;
+    height: 10px;
+}
+.swiper-pagination-bullet-active {
+    background: #BA3737;
+}
+
+.swiper {
+    max-width: 1360px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 64px;
+}
 
 .slider__content {
     min-height: 500px;
@@ -636,7 +676,7 @@ main {
 .slider__title {
     font-family: var(--main-font);
     font-weight: 600;
-    font-size: 35px;
+    font-size: calc(25px + 10 * (100vw / 1920));
     line-height: 125%;
     letter-spacing: 0.01em;
     margin-bottom: 15px;
@@ -655,7 +695,7 @@ main {
     font-family: var(--main-font);
     font-weight: 600;
     margin-bottom: 123px;
-    font-size: 20px;
+    font-size: calc(16px + 4 * (100vw / 1920));
     line-height: 125%;
     letter-spacing: 0.01em;
     color: #242222;
